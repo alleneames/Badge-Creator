@@ -7,12 +7,12 @@ class BadgeForm extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className=" first-name col-sm-4 col-sm-offset-2" >
-                            <input onChange={(event)=> {
+                            <input type="text" onChange={(event)=> {
                                 this.props.handleInput("firstname", event);
                             }} value={this.props.person.firstname} placeholder="First name" />
                         </div>
                         <div className="last-name col-sm-4">
-                            <input onChange={(event)=>{
+                            <input type="text" onChange={(event)=>{
                                 this.props.handleInput("lastname", event);
                             }} value={this.props.person.lastname} placeholder="Last name" />
                         </div>
@@ -24,15 +24,21 @@ class BadgeForm extends React.Component {
                             }} value={this.props.person.email} placeholder="email" />
                         </div>
                         <div className="place-of-birth col-sm-4">
-                            <input value={this.props.person.placeofbirth} placeholder="Place of birth" />                        
+                            <input onChange={(event)=>{
+                                this.props.handleInput("placeofbirth", event);
+                            }} value={this.props.person.placeofbirth} placeholder="Place of birth" />                        
                         </div>
                     </div>
                     <div className="row">
                         <div className="phone col-sm-4 col-sm-offset-2">
-                            <input value={this.props.person.phone} placeholder="Phone" />
+                            <input onChange={(event)=>{
+                                this.props.handleInput("phone", event);
+                            }} value={this.props.person.phone} placeholder="Phone" />
                         </div>
                         <div className="favorite-food col-sm-4">
-                            <input value={this.props.person.favoritefood} placeholder="Favorite food" />
+                            <input onChange={(event)=>{
+                                this.props.handleInput("favoritefood", event);
+                            }} value={this.props.person.favoritefood} placeholder="Favorite food" />
                         </div>
                     </div>
                     <div className="row">

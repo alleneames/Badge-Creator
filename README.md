@@ -1,3 +1,10 @@
+This project takes user inputs and outputs a work badge to the page. The App can save previous outputs and output more to the page as long as the page is not refreshed. 
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

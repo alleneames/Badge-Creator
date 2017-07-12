@@ -36,7 +36,15 @@ class BadgeContainer extends React.Component {
     handleSubmit() {
         this.setState({
             ...this.state,
-            people: [...this.state.people, this.state.person]
+            people: [...this.state.people, this.state.person],
+            person: {
+                firstname: "",
+                lastname: "",
+                email: "",
+                phone: "",
+                favoritefood: "",
+                aboutyourself: ""
+            }
         })
     }
     render() {
